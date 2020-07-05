@@ -7,8 +7,8 @@ class KiteCore:
 
     api_key = "m1qcnaqrds4jp0k3"
     api_secret = "wmdcsqgd33l9912n1ce72h04ymtbcx8j"
-    request_token = "F8DHOvBb04LcTJ3kxYVQJz5mGpYNIHSp"
-    access_token = "7eoFrhlLF9ZzhmzCM58A0TCl7NYjzQ3d"
+    request_token = None
+    access_token = None
     kite=any
     webSocket=any
     sender=any
@@ -35,7 +35,7 @@ class KiteCore:
       
 
     def __getRequestToken(self):        
-        service = webdriver.chrome.service.Service('C:\\Users\\320067000\\OneDrive - Philips\\Desktop\\market\\Automation\\DBPlugIn\\KiteCore\\chromedriver.exe')
+        service = webdriver.chrome.service.Service('..\\Core\\Utils\\chromedriver.exe')#enter your chrome driver path
         service.start()
         options = webdriver.ChromeOptions()
         options.add_argument('--headless') # disable this line to  lauch chrome
@@ -46,10 +46,10 @@ class KiteCore:
         TimerforRequestToken=3
         driver.implicitly_wait(TimerforAuthorization)
         try:
-            driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[1]/input').send_keys("VY9919")
-            driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[2]/input').send_keys("Sake#1997")
+            driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[1]/input').send_keys("")#Enter your Client ID)
+            driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[2]/input').send_keys("")#Enter your password
             driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[4]/button').click()
-            driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[2]/div/input').send_keys("560004")
+            driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[2]/div/input').send_keys("")#Enter your 2FA
             driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/form/div[3]/button').click()
 
         except:
