@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "View", "TradeAutomation\View.pyproj", "{F306E134-4797-4C23-B08C-1FF8ACF043DF}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Controller", "Controller\Controller.pyproj", "{3D7B103F-BB31-4689-96F7-83D7C7EB9CFB}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Core", "Core\Core.pyproj", "{E4AE8BB9-929D-4C53-BA6D-D97ED8B9B90E}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Model", "Model\Model.pyproj", "{92153930-A016-4DEB-BEFF-FDA7152C487E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F306E134-4797-4C23-B08C-1FF8ACF043DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F306E134-4797-4C23-B08C-1FF8ACF043DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7B103F-BB31-4689-96F7-83D7C7EB9CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7B103F-BB31-4689-96F7-83D7C7EB9CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4AE8BB9-929D-4C53-BA6D-D97ED8B9B90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4AE8BB9-929D-4C53-BA6D-D97ED8B9B90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92153930-A016-4DEB-BEFF-FDA7152C487E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92153930-A016-4DEB-BEFF-FDA7152C487E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F654419D-486C-4F85-8FD9-B6471B2CD137}
+	EndGlobalSection
+EndGlobal
