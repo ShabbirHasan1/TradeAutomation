@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>92153930-a016-4deb-beff-fda7152c487e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Model.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Model.py" />
+    <Compile Include="DBOperator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlotDataDBOperator.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.pyproj">
+      <Name>Controller</Name>
+      <Project>{3d7b103f-bb31-4689-96f7-83d7c7eb9cfb}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

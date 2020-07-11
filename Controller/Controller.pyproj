@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="PlotData.py" />
     <Compile Include="RatioExtractor.py" />
     <Compile Include="OperationController.py">
       <SubType>Code</SubType>

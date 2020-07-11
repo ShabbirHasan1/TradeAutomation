@@ -7,9 +7,12 @@ class KiteOperation:
          KiteOperation.kiteCore= KiteCore()         
          
 
-     def getQuoteInFullMode(self, stockName,exchange, sender):
-        instrumentToken=KiteOperation.kiteCore.getTokenFromName(stockName,exchange)
-        KiteOperation.kiteCore.getQuote([instrumentToken],sender)
+     def getQuoteInFullMode(self, instruments,exchange, sender):
+         tokenList=[]
+         for instrument in instruments:
+             instrumentToken=KiteOperation.kiteCore.getTokenFromName(instrument,exchange)
+             tokenList.append(instrumentToken)
+         KiteOperation.kiteCore.getQuote(tokenList,sender)
 
 
      def FilterInstruments(self,exchange):
