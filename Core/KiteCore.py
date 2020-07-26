@@ -3,12 +3,13 @@ from selenium import webdriver
 import time
 import os
 
+
 class KiteCore:
 
     api_key = "m1qcnaqrds4jp0k3"
     api_secret = "wmdcsqgd33l9912n1ce72h04ymtbcx8j"
-    request_token = None
-    access_token = None
+    request_token = "z3UeHco0cln1OhFNz0UZmgMBjSaG0oE2"
+    access_token = "DYuy9uIKWWV5MGR1SCbaYSuxup3ZT2sm"
     kite=any
     webSocket=any
     sender=any
@@ -78,6 +79,7 @@ class KiteCore:
     def on_ticks(self,ws, ticks):
         print("Ticks entered")
         self.sender.on_ticks(ticks)
+        print("returning from on ticks: kite core")
 
 
 

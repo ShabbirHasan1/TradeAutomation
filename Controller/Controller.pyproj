@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3d7b103f-bb31-4689-96f7-83d7c7eb9cfb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>RatioExtractor.py</StartupFile>
+    <StartupFile>StrategyBuilder.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Controller</Name>
     <RootNamespace>Controller</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,11 +27,19 @@
     <Compile Include="OperationController.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="StrategyBuilder.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.pyproj">
       <Name>Core</Name>
       <Project>{e4ae8bb9-929d-4c53-ba6d-d97ed8b9b90e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.pyproj">
+      <Name>Model</Name>
+      <Project>{92153930-a016-4deb-beff-fda7152c487e}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

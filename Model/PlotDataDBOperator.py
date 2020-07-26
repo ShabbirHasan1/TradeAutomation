@@ -40,7 +40,7 @@ class PlotDataDBOperator(DBOperator):
       Ratio=[]
       LTP=[]
       for each in All:
-          if (each.InstrumentName==instrument)&(each.Time > startdate)&(each.Time<enddate):   
+          if (each.InstrumentName==instrument):#&(each.Time > startdate)&(each.Time<enddate):   
               Time.append(each.Time)
               Ratio.append(each.Ratio)
               LTP.append(each.LTP)

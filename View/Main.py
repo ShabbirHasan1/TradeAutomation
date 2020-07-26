@@ -30,7 +30,7 @@ class view:
         self.bridge=ControllerBridge()
         
         
-        master.geometry("200x100")
+        master.geometry("600x400")
 
         DefaultExchange = StringVar(master)
         DefaultExchange.set(view.state.Exchanges[0]) # default value
@@ -122,10 +122,12 @@ class view:
 
 
     def OnGetQuotes(self):  
-            self.bridge.SubscribeMarketQuotes(view.state.ListOfActiveInstruments,view.state.selectedExchange)
-            for instrument in view.state.ListOfActiveInstruments:
-                plotter=Plotter(PlotData,PlotDataDBOperator(PlotData),instrument)
-                threading.Thread(target = plotter.Animate).start()
+            #self.bridge.SubscribeMarketQuotes(view.state.ListOfActiveInstruments,view.state.selectedExchange)
+            
+            for instrument in view.state.ListOfActiveInstruments:     
+                plotter=Plotter(PlotData,PlotDataDBOperator(PlotData),view.state.ListOfActiveInstruments)
+                threading.Thread(target = plotter.Animate,args=(view.state.ListOfActiveInstruments.index(instrument),instrument)).start()
+                
             
             
             

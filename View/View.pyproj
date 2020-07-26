@@ -5,7 +5,7 @@
     <ProjectGuid>f306e134-4797-4c23-b08c-1ff8acf043df</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Main.py</StartupFile>
+    <StartupFile>OptionStrategyBuilder.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Main.py" />
+    <Compile Include="OptionResultPlotter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OptionStrategyBuilder.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Plotter.py">
       <SubType>Code</SubType>
     </Compile>
