@@ -17,3 +17,10 @@ class PlotData(Base):
      Ratio=Column(Integer)
      
      
+# CREATE TABLE `traderdetails`.`plotdata` (
+#   `ID` INT NOT NULL,
+#   `InstrumentName` VARCHAR(40) NULL,
+#   `Time` DATETIME NULL,
+#   `LTP` INT NULL,
+#   `Ratio` INT NULL,
+#   PRIMARY KEY (`ID`));
